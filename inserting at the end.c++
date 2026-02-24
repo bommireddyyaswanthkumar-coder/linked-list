@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
-
+# Define Node Structure
 struct Node {
     int data;
     Node* next;
 };
+# Function to Insert at End
 void insertAtEnd(Node* &head, int value) {
     // Create new node
     Node* newNode = new Node();
@@ -26,6 +27,7 @@ void insertAtEnd(Node* &head, int value) {
     // Attach new node at last
     temp->next = newNode;
 }
+# Display Function
 void display(Node* head) {
     Node* temp = head;
     while (temp != NULL) {
@@ -34,6 +36,9 @@ void display(Node* head) {
     }
     cout << "NULL";
 }
+
+# Main Function
+
 int main() {
     Node* head = NULL;
 
